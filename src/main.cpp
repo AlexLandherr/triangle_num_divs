@@ -19,6 +19,10 @@ What is the value of the first triangle number to have over five hundred divisor
 */
 
 int main() {
+    func::triangle_num_info tri = func::factor_count_greater_than(500);
+    std::cout << "The value of the first triangle number to have over five hundred divisors is:" << '\n';
+    std::cout << "Value: " << tri.value_of << '\n';
+    std::cout << "Index: " << tri.index << '\n';
 
     return 0;
 }
